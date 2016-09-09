@@ -1,0 +1,23 @@
+{
+  "name": "MVUIHacks",
+  "version": "0.2.4",
+  "summary": "A collection of UI Hacks.",
+  "description": "A collection of UI Designables.",
+  "homepage": "https://github.com/eharrison/MVUIHacks",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Evandro Hoffmann": "evandro@itsdayoff.com"
+  },
+  "source": {
+    "git": "https://github.com/eharrison/MVUIHacks.git",
+    "tag": "0.2.4"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MVUIHacks/Classes/**/*.{swift}",
+  "frameworks": "UIKit"
+}

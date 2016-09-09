@@ -1,0 +1,6 @@
+framework module Pods_MVUIHacks_Example {
+  umbrella header "Pods-MVUIHacks_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

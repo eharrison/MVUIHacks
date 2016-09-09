@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003087A7FC331A15665E05C358FD1B40 /* Pods-MVUIHacks_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47013E177C1B79D6EA66A7A39A947F54 /* Pods-MVUIHacks_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0AE29C1D82A29B0044151A /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2901D82A29B0044151A /* DesignableButton.swift */; };
+		0A0AE29D1D82A29B0044151A /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2911D82A29B0044151A /* DesignableImageView.swift */; };
+		0A0AE29E1D82A29B0044151A /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2921D82A29B0044151A /* DesignableLabel.swift */; };
+		0A0AE29F1D82A29B0044151A /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2931D82A29B0044151A /* DesignableNavigationBar.swift */; };
+		0A0AE2A01D82A29B0044151A /* DesignableProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2941D82A29B0044151A /* DesignableProgressView.swift */; };
+		0A0AE2A11D82A29B0044151A /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2951D82A29B0044151A /* DesignableTextField.swift */; };
+		0A0AE2A21D82A29B0044151A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2961D82A29B0044151A /* DesignableView.swift */; };
+		0A0AE2A31D82A29B0044151A /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2981D82A29B0044151A /* UIBezierPath+Polygon.swift */; };
+		0A0AE2A41D82A29B0044151A /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE2991D82A29B0044151A /* UIView+Animation.swift */; };
+		0A0AE2A51D82A29B0044151A /* UIView+Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE29A1D82A29B0044151A /* UIView+Layers.swift */; };
+		0A0AE2A61D82A29B0044151A /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE29B1D82A29B0044151A /* ParallaxHeaderView.swift */; };
+		105C108855D8D04605D8C5D6A6FD12E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		2EB52E8426AAF81B83F1E660F051FFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		6D1AB31B91AD52D3181EDB200D90C9D5 /* MVUIHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F7BD83F13A79D9C88BD3C55BF5ED4C /* MVUIHacks-dummy.m */; };
+		7E2DCD7D063F12C0C5A551142994C4B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		95D35EAE7FF73178E4160262B1C43E89 /* Pods-MVUIHacks_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E58B821333F8B1704FFAA242F0291C /* Pods-MVUIHacks_Example-dummy.m */; };
+		9617C97824A6E52BAD2C87701D8D0A99 /* Pods-MVUIHacks_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EB45D10A094E632703C8AF6CA1B1F8 /* Pods-MVUIHacks_Tests-dummy.m */; };
+		A2E652C132696D96A9BBC08158D77135 /* Pods-MVUIHacks_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D40C26F3123A7457A47D26562E0089 /* Pods-MVUIHacks_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20E895BF901AD818487455F672CA043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		DB47C84B108F126CB82EEA90459A669F /* MVUIHacks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E64C94FBE47D9C1022450549E91B1FF /* MVUIHacks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DB071948CF99458083443BC479CD99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DF7E7A9C2FEF205A0F58B2BEA8D4AD;
+			remoteInfo = MVUIHacks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0AE2901D82A29B0044151A /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		0A0AE2911D82A29B0044151A /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		0A0AE2921D82A29B0044151A /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		0A0AE2931D82A29B0044151A /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableNavigationBar.swift; sourceTree = "<group>"; };
+		0A0AE2941D82A29B0044151A /* DesignableProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableProgressView.swift; sourceTree = "<group>"; };
+		0A0AE2951D82A29B0044151A /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		0A0AE2961D82A29B0044151A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		0A0AE2981D82A29B0044151A /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
+		0A0AE2991D82A29B0044151A /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		0A0AE29A1D82A29B0044151A /* UIView+Layers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layers.swift"; sourceTree = "<group>"; };
+		0A0AE29B1D82A29B0044151A /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		0ACE44CA5A17331B42CD44DEC2767111 /* Pods-MVUIHacks_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVUIHacks_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0C787AEE7D89D630B86331CA14EB5372 /* Pods-MVUIHacks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVUIHacks_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0EC0355951BCEC5E762AEF0533E557A0 /* Pods-MVUIHacks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVUIHacks_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1480D2EB6F87084A64B09E6CE6C0C360 /* Pods-MVUIHacks_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVUIHacks_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A519B767B684EF36C8FC16B2D950E76 /* Pods_MVUIHacks_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVUIHacks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3118A4B8E04D071761C7661A3A98798D /* Pods-MVUIHacks_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVUIHacks_Example-resources.sh"; sourceTree = "<group>"; };
+		40EEA8AC3279014EF0560B75973FB3E9 /* Pods-MVUIHacks_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVUIHacks_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45F0926F4CC3FAFE354A16278450A8D4 /* Pods-MVUIHacks_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVUIHacks_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		47013E177C1B79D6EA66A7A39A947F54 /* Pods-MVUIHacks_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVUIHacks_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4DC0572E85ADED25E77C2BD6E9FBCDC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EBF8C1289F6EC69678829DE74EA6F48 /* Pods-MVUIHacks_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MVUIHacks_Example.modulemap"; sourceTree = "<group>"; };
+		66E7F95F6170E7B5FD4FCED810613456 /* Pods_MVUIHacks_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVUIHacks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA292647742A5E6F71963B24373C2CB /* MVUIHacks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MVUIHacks.xcconfig; sourceTree = "<group>"; };
+		6E64C94FBE47D9C1022450549E91B1FF /* MVUIHacks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MVUIHacks-umbrella.h"; sourceTree = "<group>"; };
+		6F89E165E4361108E9B7ABC01329FEE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E12CFE5BF49107EFEA80E3D7BC1693 /* MVUIHacks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MVUIHacks.modulemap; sourceTree = "<group>"; };
+		88F7BD83F13A79D9C88BD3C55BF5ED4C /* MVUIHacks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MVUIHacks-dummy.m"; sourceTree = "<group>"; };
+		8D88ADBEE516A34D2A993400A9989627 /* Pods-MVUIHacks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVUIHacks_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8FE0B54C161EA10DC62F19E493167A53 /* Pods-MVUIHacks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVUIHacks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		92E58B821333F8B1704FFAA242F0291C /* Pods-MVUIHacks_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVUIHacks_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AB9C9227C72C3303CE9D9FA57281234 /* MVUIHacks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MVUIHacks-prefix.pch"; sourceTree = "<group>"; };
+		9EA7E9B3AC0C9AE93C3D4AA0A9AFD2B6 /* Pods-MVUIHacks_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MVUIHacks_Tests.modulemap"; sourceTree = "<group>"; };
+		A1D40C26F3123A7457A47D26562E0089 /* Pods-MVUIHacks_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVUIHacks_Example-umbrella.h"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4A4460B364F815790ED17DFB0DB4D08 /* Pods-MVUIHacks_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVUIHacks_Tests-resources.sh"; sourceTree = "<group>"; };
+		C74238A49C7B66651DF0A17957DF8C13 /* MVUIHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVUIHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1EB45D10A094E632703C8AF6CA1B1F8 /* Pods-MVUIHacks_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVUIHacks_Tests-dummy.m"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EC0979C92391BC5DB82D3ED0AB59BFF6 /* Pods-MVUIHacks_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVUIHacks_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F78CF6EF8F6B710A192ADD9F8D9FCF91 /* Pods-MVUIHacks_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVUIHacks_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FB75711C0E62B157525E70112B3DEAC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF08817E8763C756FC8373461A4EDEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCD7D063F12C0C5A551142994C4B8 /* Foundation.framework in Frameworks */,
+				C20E895BF901AD818487455F672CA043 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB003B54F955B3865EE4815AC5E9AD93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB52E8426AAF81B83F1E660F051FFE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB01914605E2A8AA8A7C88AB2555A7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105C108855D8D04605D8C5D6A6FD12E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0302BF8795F8B3D3B5424321665182F4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A0AE28F1D82A29B0044151A /* Designable */,
+				0A0AE2971D82A29B0044151A /* Extensions */,
+				0A0AE29B1D82A29B0044151A /* ParallaxHeaderView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		08AE4A8ABD0FB59BE2DC48ABFEEADBEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB75711C0E62B157525E70112B3DEAC3 /* Info.plist */,
+				73E12CFE5BF49107EFEA80E3D7BC1693 /* MVUIHacks.modulemap */,
+				6CA292647742A5E6F71963B24373C2CB /* MVUIHacks.xcconfig */,
+				88F7BD83F13A79D9C88BD3C55BF5ED4C /* MVUIHacks-dummy.m */,
+				9AB9C9227C72C3303CE9D9FA57281234 /* MVUIHacks-prefix.pch */,
+				6E64C94FBE47D9C1022450549E91B1FF /* MVUIHacks-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MVUIHacks";
+			sourceTree = "<group>";
+		};
+		0A0AE28F1D82A29B0044151A /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				0A0AE2901D82A29B0044151A /* DesignableButton.swift */,
+				0A0AE2911D82A29B0044151A /* DesignableImageView.swift */,
+				0A0AE2921D82A29B0044151A /* DesignableLabel.swift */,
+				0A0AE2931D82A29B0044151A /* DesignableNavigationBar.swift */,
+				0A0AE2941D82A29B0044151A /* DesignableProgressView.swift */,
+				0A0AE2951D82A29B0044151A /* DesignableTextField.swift */,
+				0A0AE2961D82A29B0044151A /* DesignableView.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		0A0AE2971D82A29B0044151A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A0AE2981D82A29B0044151A /* UIBezierPath+Polygon.swift */,
+				0A0AE2991D82A29B0044151A /* UIView+Animation.swift */,
+				0A0AE29A1D82A29B0044151A /* UIView+Layers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		332154611DC71BDF067C24A9C4C7D222 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B00F6BAF16D1045409BF8A15F7653B5 /* Pods-MVUIHacks_Example */,
+				399FF618785AF569115527E909C1D653 /* Pods-MVUIHacks_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		399FF618785AF569115527E909C1D653 /* Pods-MVUIHacks_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC0572E85ADED25E77C2BD6E9FBCDC4 /* Info.plist */,
+				9EA7E9B3AC0C9AE93C3D4AA0A9AFD2B6 /* Pods-MVUIHacks_Tests.modulemap */,
+				40EEA8AC3279014EF0560B75973FB3E9 /* Pods-MVUIHacks_Tests-acknowledgements.markdown */,
+				EC0979C92391BC5DB82D3ED0AB59BFF6 /* Pods-MVUIHacks_Tests-acknowledgements.plist */,
+				E1EB45D10A094E632703C8AF6CA1B1F8 /* Pods-MVUIHacks_Tests-dummy.m */,
+				F78CF6EF8F6B710A192ADD9F8D9FCF91 /* Pods-MVUIHacks_Tests-frameworks.sh */,
+				B4A4460B364F815790ED17DFB0DB4D08 /* Pods-MVUIHacks_Tests-resources.sh */,
+				47013E177C1B79D6EA66A7A39A947F54 /* Pods-MVUIHacks_Tests-umbrella.h */,
+				8FE0B54C161EA10DC62F19E493167A53 /* Pods-MVUIHacks_Tests.debug.xcconfig */,
+				0EC0355951BCEC5E762AEF0533E557A0 /* Pods-MVUIHacks_Tests.release.xcconfig */,
+			);
+			name = "Pods-MVUIHacks_Tests";
+			path = "Target Support Files/Pods-MVUIHacks_Tests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B00F6BAF16D1045409BF8A15F7653B5 /* Pods-MVUIHacks_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6F89E165E4361108E9B7ABC01329FEE1 /* Info.plist */,
+				5EBF8C1289F6EC69678829DE74EA6F48 /* Pods-MVUIHacks_Example.modulemap */,
+				1480D2EB6F87084A64B09E6CE6C0C360 /* Pods-MVUIHacks_Example-acknowledgements.markdown */,
+				45F0926F4CC3FAFE354A16278450A8D4 /* Pods-MVUIHacks_Example-acknowledgements.plist */,
+				92E58B821333F8B1704FFAA242F0291C /* Pods-MVUIHacks_Example-dummy.m */,
+				0ACE44CA5A17331B42CD44DEC2767111 /* Pods-MVUIHacks_Example-frameworks.sh */,
+				3118A4B8E04D071761C7661A3A98798D /* Pods-MVUIHacks_Example-resources.sh */,
+				A1D40C26F3123A7457A47D26562E0089 /* Pods-MVUIHacks_Example-umbrella.h */,
+				8D88ADBEE516A34D2A993400A9989627 /* Pods-MVUIHacks_Example.debug.xcconfig */,
+				0C787AEE7D89D630B86331CA14EB5372 /* Pods-MVUIHacks_Example.release.xcconfig */,
+			);
+			name = "Pods-MVUIHacks_Example";
+			path = "Target Support Files/Pods-MVUIHacks_Example";
+			sourceTree = "<group>";
+		};
+		7860AB265DBCC6F2FCABC1D786E60FDD /* MVUIHacks */ = {
+			isa = PBXGroup;
+			children = (
+				C3290DBF4018ACD9C0926C0139F79BB7 /* MVUIHacks */,
+				08AE4A8ABD0FB59BE2DC48ABFEEADBEB /* Support Files */,
+			);
+			name = MVUIHacks;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B204F31707FF8A3E518EC77731E65EBF /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9C71798436B3B1E9E16ACF0242DD8E7F /* Products */,
+				332154611DC71BDF067C24A9C4C7D222 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9C71798436B3B1E9E16ACF0242DD8E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C74238A49C7B66651DF0A17957DF8C13 /* MVUIHacks.framework */,
+				66E7F95F6170E7B5FD4FCED810613456 /* Pods_MVUIHacks_Example.framework */,
+				1A519B767B684EF36C8FC16B2D950E76 /* Pods_MVUIHacks_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B204F31707FF8A3E518EC77731E65EBF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7860AB265DBCC6F2FCABC1D786E60FDD /* MVUIHacks */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C3290DBF4018ACD9C0926C0139F79BB7 /* MVUIHacks */ = {
+			isa = PBXGroup;
+			children = (
+				0302BF8795F8B3D3B5424321665182F4 /* Classes */,
+			);
+			path = MVUIHacks;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05AD1BED75263ED05AEDAD5FFBCDB3C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003087A7FC331A15665E05C358FD1B40 /* Pods-MVUIHacks_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943A6305B0CA910B9BAD9A9FE90C1BC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E652C132696D96A9BBC08158D77135 /* Pods-MVUIHacks_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E05A380AF25F2A5241D181C114B15E96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB47C84B108F126CB82EEA90459A669F /* MVUIHacks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A4DF7E7A9C2FEF205A0F58B2BEA8D4AD /* MVUIHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8902CBFA21513A238C9C3A52E9FFE193 /* Build configuration list for PBXNativeTarget "MVUIHacks" */;
+			buildPhases = (
+				A9E55264B3E661C55C0127A4538D7657 /* Sources */,
+				AAF08817E8763C756FC8373461A4EDEE /* Frameworks */,
+				E05A380AF25F2A5241D181C114B15E96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVUIHacks;
+			productName = MVUIHacks;
+			productReference = C74238A49C7B66651DF0A17957DF8C13 /* MVUIHacks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7C0A320964B6937BE0A12659EF7DB64 /* Pods-MVUIHacks_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EED0541CF025871FC451ECB67D4DDD7 /* Build configuration list for PBXNativeTarget "Pods-MVUIHacks_Tests" */;
+			buildPhases = (
+				CCC698373CCC2919E78AA58A077C9D5B /* Sources */,
+				DB01914605E2A8AA8A7C88AB2555A7D9 /* Frameworks */,
+				05AD1BED75263ED05AEDAD5FFBCDB3C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MVUIHacks_Tests";
+			productName = "Pods-MVUIHacks_Tests";
+			productReference = 1A519B767B684EF36C8FC16B2D950E76 /* Pods_MVUIHacks_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7A259BF563675B953B95B7F38945C9C /* Pods-MVUIHacks_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4344F9E1EB6819FF5537C3E3A02D5D /* Build configuration list for PBXNativeTarget "Pods-MVUIHacks_Example" */;
+			buildPhases = (
+				35FE22AC08D430434D1B4D0114578300 /* Sources */,
+				DB003B54F955B3865EE4815AC5E9AD93 /* Frameworks */,
+				943A6305B0CA910B9BAD9A9FE90C1BC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4580DB003C984A6D22A72B5FA86EA52 /* PBXTargetDependency */,
+			);
+			name = "Pods-MVUIHacks_Example";
+			productName = "Pods-MVUIHacks_Example";
+			productReference = 66E7F95F6170E7B5FD4FCED810613456 /* Pods_MVUIHacks_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					A4DF7E7A9C2FEF205A0F58B2BEA8D4AD = {
+						LastSwiftMigration = 0800;
+					};
+					F7A259BF563675B953B95B7F38945C9C = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9C71798436B3B1E9E16ACF0242DD8E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4DF7E7A9C2FEF205A0F58B2BEA8D4AD /* MVUIHacks */,
+				F7A259BF563675B953B95B7F38945C9C /* Pods-MVUIHacks_Example */,
+				D7C0A320964B6937BE0A12659EF7DB64 /* Pods-MVUIHacks_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FE22AC08D430434D1B4D0114578300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D35EAE7FF73178E4160262B1C43E89 /* Pods-MVUIHacks_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E55264B3E661C55C0127A4538D7657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0AE2A21D82A29B0044151A /* DesignableView.swift in Sources */,
+				0A0AE2A51D82A29B0044151A /* UIView+Layers.swift in Sources */,
+				0A0AE29F1D82A29B0044151A /* DesignableNavigationBar.swift in Sources */,
+				6D1AB31B91AD52D3181EDB200D90C9D5 /* MVUIHacks-dummy.m in Sources */,
+				0A0AE2A31D82A29B0044151A /* UIBezierPath+Polygon.swift in Sources */,
+				0A0AE29D1D82A29B0044151A /* DesignableImageView.swift in Sources */,
+				0A0AE2A11D82A29B0044151A /* DesignableTextField.swift in Sources */,
+				0A0AE2A01D82A29B0044151A /* DesignableProgressView.swift in Sources */,
+				0A0AE2A61D82A29B0044151A /* ParallaxHeaderView.swift in Sources */,
+				0A0AE2A41D82A29B0044151A /* UIView+Animation.swift in Sources */,
+				0A0AE29E1D82A29B0044151A /* DesignableLabel.swift in Sources */,
+				0A0AE29C1D82A29B0044151A /* DesignableButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC698373CCC2919E78AA58A077C9D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9617C97824A6E52BAD2C87701D8D0A99 /* Pods-MVUIHacks_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4580DB003C984A6D22A72B5FA86EA52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVUIHacks;
+			target = A4DF7E7A9C2FEF205A0F58B2BEA8D4AD /* MVUIHacks */;
+			targetProxy = D3DB071948CF99458083443BC479CD99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23F4C1FF111338596B33939B56F81B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA292647742A5E6F71963B24373C2CB /* MVUIHacks.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MVUIHacks/MVUIHacks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MVUIHacks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MVUIHacks/MVUIHacks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MVUIHacks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66F1D77D3A4B221B0E41E57C56844EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C787AEE7D89D630B86331CA14EB5372 /* Pods-MVUIHacks_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MVUIHacks_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MVUIHacks_Example/Pods-MVUIHacks_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MVUIHacks_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		702C9FE40053E995AECF3B3CEC6CFC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D88ADBEE516A34D2A993400A9989627 /* Pods-MVUIHacks_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MVUIHacks_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MVUIHacks_Example/Pods-MVUIHacks_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MVUIHacks_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79D5AC180A24803535E518DBEC8F47A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC0355951BCEC5E762AEF0533E557A0 /* Pods-MVUIHacks_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MVUIHacks_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MVUIHacks_Tests/Pods-MVUIHacks_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MVUIHacks_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7154BAD98F28C21F9B04633717AA3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA292647742A5E6F71963B24373C2CB /* MVUIHacks.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MVUIHacks/MVUIHacks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MVUIHacks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MVUIHacks/MVUIHacks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MVUIHacks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC86AF27E9EC6B9A11AD1E82AD91B4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE0B54C161EA10DC62F19E493167A53 /* Pods-MVUIHacks_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MVUIHacks_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MVUIHacks_Tests/Pods-MVUIHacks_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MVUIHacks_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EED0541CF025871FC451ECB67D4DDD7 /* Build configuration list for PBXNativeTarget "Pods-MVUIHacks_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC86AF27E9EC6B9A11AD1E82AD91B4ED /* Debug */,
+				79D5AC180A24803535E518DBEC8F47A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8902CBFA21513A238C9C3A52E9FFE193 /* Build configuration list for PBXNativeTarget "MVUIHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F4C1FF111338596B33939B56F81B48 /* Debug */,
+				A7154BAD98F28C21F9B04633717AA3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4344F9E1EB6819FF5537C3E3A02D5D /* Build configuration list for PBXNativeTarget "Pods-MVUIHacks_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702C9FE40053E995AECF3B3CEC6CFC9F /* Debug */,
+				66F1D77D3A4B221B0E41E57C56844EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

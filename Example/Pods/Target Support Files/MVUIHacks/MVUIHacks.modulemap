@@ -1,0 +1,6 @@
+framework module MVUIHacks {
+  umbrella header "MVUIHacks-umbrella.h"
+
+  export *
+  module * { export * }
+}
