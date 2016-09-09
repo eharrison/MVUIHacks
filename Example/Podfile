@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MVUIHacks_Example' do
+  pod 'MVUIHacks', :path => '../'
+
+  target 'MVUIHacks_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
