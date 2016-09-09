@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'MVUIHacks'
-s.version          = '0.1.8'
+s.version          = '0.1.9'
 s.summary          = 'A collection of UI Hacks.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ s.description      = <<-DESC
 A collection of UI Designables.
 DESC
 
-s.homepage         = 'https://github.com/eharrison/MVUIHacks'
+s.homepage         = 'https://github.com/iOSWizards/MVUIHacks'
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Evandro Hoffmann' => 'evandro@itsdayoff.com' }
-s.source           = { :git => 'https://github.com/eharrison/MVUIHacks.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/iOSWizards/MVUIHacks.git', :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
 s.ios.deployment_target = '8.0'
