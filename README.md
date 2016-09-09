@@ -26,6 +26,10 @@ pod "MVUIHacks", git: 'https://github.com/iOSWizards/MVUIHacks', tag: '0.1.9'
 
 Evandro Harrison Hoffmann, evandro@itsdayoff.com
 
+## Contributor
+
+Leonardo Ferreira, leonardo.kaminski.ferreira@gmail.com
+
 ## License
 
 MVUIHacks is available under the MIT license. See the LICENSE file for more info.
