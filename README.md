@@ -6,9 +6,9 @@
 [![License](https://img.shields.io/cocoapods/l/MVUIHacks.svg?style=flat)](http://cocoapods.org/pods/MVUIHacks)
 [![Platform](https://img.shields.io/cocoapods/p/MVUIHacks.svg?style=flat)](http://cocoapods.org/pods/MVUIHacks)
 ## Continuous integration - branch master
-[![CI Status Master](https://travis-ci.org/MVUIHacks/MVUIHacks.svg?branch=master)](https://travis-ci.org/iOSWizards/AwesomeData)
+[![CI Status Master](https://travis-ci.org/iOSWizards/MVUIHacks.svg?branch=master)](https://travis-ci.org/iOSWizards/AwesomeData)
 ### Continuous integration - branch develop
-[![CI Status](https://travis-ci.org/MVUIHacks/MVUIHacks.svg?branch=0.1.9)](https://travis-ci.org/iOSWizards/AwesomeData)
+[![CI Status](https://travis-ci.org/iOSWizards/MVUIHacks.svg?branch=0.1.9)](https://travis-ci.org/iOSWizards/AwesomeData)
 
 ## Example
 
