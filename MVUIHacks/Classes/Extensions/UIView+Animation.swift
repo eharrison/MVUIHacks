@@ -10,64 +10,100 @@ import UIKit
 
 extension UIView{
     
-    public func animateShowPopingUp(_ completion:(() -> Void)?){
+    public func animateShowPopingUp(duration: Double = 0.2, scaleIn: CGFloat = 0.1, scaleOut: CGFloat = 1.05, alphaIn: CGFloat = 0, _ completion:(() -> Void)?){
         isHidden = false
-        alpha = 0
-        transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        alpha = alphaIn
+        transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
         
-        UIView.animate(withDuration: 0.3, animations: {
-            self.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+        UIView.animate(withDuration: duration*0.7, animations: {
+            self.transform = CGAffineTransform(scaleX: scaleOut, y: scaleOut)
             self.alpha = 1
-        }, completion: { (Bool) in
-            UIView.animate(withDuration: 0.2, animations: {
-                self.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }, completion: { (Bool) in
-                completion?()
-            }) 
-        }) 
+        }, completion: { (didComplete) in
+            if didComplete {
+                UIView.animate(withDuration: duration*0.3, animations: {
+                    self.transform = CGAffineTransform(scaleX: 1, y: 1)
+                }, completion: { (didComplete) in
+                    if didComplete {
+                        completion?()
+                    }
+                })
+            }
+        })
     }
     
-    public func fadeInUp(_ completion:(() -> Void)?){
-        self.alpha = 0
+    public func animateFadeInUp(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)?){
+        self.alpha = alphaIn
         
         let center = self.center
         self.center = CGPoint(x: self.center.x, y: self.superview!.frame.size.height)
         
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: duration, animations: {
             self.center = center
             self.alpha = 1
-        }, completion: { (Bool) in
-            completion?()
-        }) 
+        }, completion: { (didComplete) in
+            if didComplete {
+                completion?()
+            }
+        })
+    }
+    
+    public func animateFadeIn(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)?){
+        self.alpha = alphaIn
+        
+        UIView.animate(withDuration: duration, animations: {
+            self.alpha = 1
+        }, completion: { (didComplete) in
+            if didComplete {
+                completion?()
+            }
+        })
+    }
+    
+    public func animateFadeOut(duration: Double = 0.3, _ completion:(() -> Void)?){
+        UIView.animate(withDuration: duration, animations: {
+            self.alpha = 0
+        }, completion: { (didComplete) in
+            if didComplete {
+                completion?()
+            }
+        })
     }
     
     public func animateFadeAway(_ completion:(() -> Void)?){
         UIView.animate(withDuration: 0.2, animations: {
             self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        }, completion: { (Bool) in
-            UIView.animate(withDuration: 0.2, animations: {
-                self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                self.alpha = 0
-            }, completion: { (Bool) in
-                self.isHidden = true
-                completion?()
-            }) 
-        }) 
+        }, completion: { (didComplete) in
+            if didComplete {
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                    self.alpha = 0
+                }, completion: { (didComplete) in
+                    if didComplete {
+                        self.isHidden = true
+                        completion?()
+                    }
+                })
+            }
+        })
     }
     
-    public func animateTouchDown(_ completion:((_ completed: Bool) -> Void)?){
-        UIView.animate(withDuration: 0.1, animations: {
-            self.alpha = 0.9
-            self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-        }, completion: { (Bool) in
-            completion?(false)
-            UIView .animate(withDuration: 0.2, animations: {
-                self.alpha = 1
-                self.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }, completion: { (Bool) in
-                completion?(true)
-            }) 
-        }) 
+    public func animateTouchDown(duration: Double = 0.2, scaleIn: CGFloat = 0.1, alphaIn: CGFloat = 0, halfWay:(() -> Void)? = nil, _ completed:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration*0.5, animations: {
+            self.alpha = alphaIn
+            self.transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
+        }, completion: { (didComplete) in
+            if didComplete {
+                halfWay?()
+                UIView .animate(withDuration: duration, animations: {
+                    self.alpha = 1
+                    self.transform = CGAffineTransform(scaleX: 1, y: 1)
+                }, completion: { (didComplete) in
+                    if didComplete {
+                        completed?()
+                    }
+                })
+            }
+        })
     }
     
 }
