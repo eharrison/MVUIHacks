@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView{
     
-    public func animateShowPopingUp(duration: Double = 0.2, scaleIn: CGFloat = 0.1, scaleOut: CGFloat = 1.05, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
+    public func animateShowPopingUp(duration: Double = 0.4, scaleIn: CGFloat = 0.1, scaleOut: CGFloat = 1.05, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
         isHidden = false
         alpha = alphaIn
         transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
