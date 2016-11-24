@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +22,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-ad-FrA" customClass="DesignableView" customModule="MVUIHacks">
+                                <rect key="frame" x="112.5" y="20" width="150" height="150"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="75t-XJ-c3D"/>
-                                    <constraint firstAttribute="width" constant="240" id="lxp-Sc-t6c"/>
+                                    <constraint firstAttribute="height" constant="150" id="75t-XJ-c3D"/>
+                                    <constraint firstAttribute="width" constant="150" id="lxp-Sc-t6c"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="120"/>
+                                        <real key="value" value="75"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Go-6A-msd" customClass="DesignableView" customModule="MVUIHacks">
+                                <rect key="frame" x="112.5" y="178" width="150" height="150"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="thk-TH-mYR"/>
-                                    <constraint firstAttribute="width" constant="240" id="wcH-dd-C9H"/>
+                                    <constraint firstAttribute="height" constant="150" id="thk-TH-mYR"/>
+                                    <constraint firstAttribute="width" constant="150" id="wcH-dd-C9H"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shapeType">
@@ -42,15 +47,53 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWZ-bb-rCF">
+                                <rect key="frame" x="68" y="347" width="240" height="52"/>
+                                <color key="backgroundColor" red="0.50100648400000003" green="0.59068185090000003" blue="0.97647982840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Udj-aI-Vzr"/>
+                                    <constraint firstAttribute="width" constant="240" id="heH-JC-HgI"/>
+                                </constraints>
+                                <state key="normal" title="Auto Animate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DSQ-Ui-hVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78f-As-Cp3">
+                                <rect key="frame" x="68" y="407" width="240" height="52"/>
+                                <color key="backgroundColor" red="0.50100648400000003" green="0.59068185090000003" blue="0.97647982840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="0X7-YH-bYh"/>
+                                    <constraint firstAttribute="width" constant="240" id="lyd-Kw-gam"/>
+                                </constraints>
+                                <state key="normal" title="Press And Hold">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressAndHoldPressed:" destination="vXZ-lx-hvc" eventType="touchDown" id="JuH-oi-SAk"/>
+                                    <action selector="pressAndHoldReleased:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CEc-3v-XuM"/>
+                                    <action selector="pressAndHoldReleased:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="vdp-gV-nyY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="78f-As-Cp3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3hN-wQ-pfv"/>
+                            <constraint firstItem="xWZ-bb-rCF" firstAttribute="top" secondItem="3Go-6A-msd" secondAttribute="bottom" constant="19" id="Bgx-q1-6FP"/>
                             <constraint firstItem="cE4-ad-FrA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="N4b-gN-HOr"/>
+                            <constraint firstItem="xWZ-bb-rCF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SO3-y0-Q7j"/>
                             <constraint firstItem="cE4-ad-FrA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Vop-uC-d9q"/>
                             <constraint firstItem="3Go-6A-msd" firstAttribute="top" secondItem="cE4-ad-FrA" secondAttribute="bottom" constant="8" id="WfY-xt-mbF"/>
+                            <constraint firstItem="78f-As-Cp3" firstAttribute="top" secondItem="xWZ-bb-rCF" secondAttribute="bottom" constant="8" id="g0K-H2-1az"/>
                             <constraint firstItem="3Go-6A-msd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nX9-Ju-Vfu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circleView" destination="cE4-ad-FrA" id="cQc-jQ-Jor"/>
+                        <outlet property="hexagonView" destination="3Go-6A-msd" id="pbt-Lq-fHd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

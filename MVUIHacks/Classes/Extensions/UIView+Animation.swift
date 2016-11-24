@@ -87,23 +87,32 @@ extension UIView{
         })
     }
     
-    public func animateTouchDown(duration: Double = 0.2, scaleIn: CGFloat = 0.9, alphaIn: CGFloat = 0, halfWay:(() -> Void)? = nil, _ completed:(() -> Void)? = nil){
-        UIView.animate(withDuration: duration*0.5, animations: {
+    public func animateTouchDown(duration: Double = 0.1, durationOut: Double = 0.2, scaleIn: CGFloat = 0.9, alphaIn: CGFloat = 0.9, autoAnimateUp: Bool = true, halfWay:(() -> Void)? = nil, _ completed:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration, animations: {
             self.alpha = alphaIn
             self.transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
         }, completion: { (didComplete) in
             if didComplete {
                 halfWay?()
-                UIView .animate(withDuration: duration, animations: {
-                    self.alpha = 1
-                    self.transform = CGAffineTransform(scaleX: 1, y: 1)
-                }, completion: { (didComplete) in
-                    if didComplete {
+                
+                if autoAnimateUp{
+                    self.animateTouchUp(duration: durationOut, {
                         completed?()
-                    }
-                })
+                    })
+                }
             }
         })
+    }
+    
+    public func animateTouchUp(duration: Double = 0.2, _ completed:(() -> Void)? = nil){
+            UIView .animate(withDuration: duration, animations: {
+                self.alpha = 1
+                self.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { (didComplete) in
+                if didComplete {
+                    completed?()
+                }
+            })
     }
     
 }
