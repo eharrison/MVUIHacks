@@ -37,6 +37,7 @@ open class ParallaxHeaderView: UIView {
             self.closedView.alpha = 0
             let delta: CGFloat = fabs(min(0.0, offset.y))
             var rect = kDefaultHeaderFrame
+            rect.size.width = UIScreen.main.bounds.width
             rect.size.height = kDefaultHeaderFrame.size.height
             rect.origin.y -= delta
             rect.size.height += delta
