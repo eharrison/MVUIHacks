@@ -19,15 +19,15 @@ extension UIView{
             self.transform = CGAffineTransform(scaleX: scaleOut, y: scaleOut)
             self.alpha = 1
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 UIView.animate(withDuration: duration*0.3, animations: {
                     self.transform = CGAffineTransform(scaleX: 1, y: 1)
                 }, completion: { (didComplete) in
-                    if didComplete {
+                    //if didComplete {
                         completion?()
-                    }
+                    //}
                 })
-            }
+            //}
         })
     }
     
@@ -41,9 +41,9 @@ extension UIView{
             self.center = center
             self.alpha = 1
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 completion?()
-            }
+            //}
         })
     }
     
@@ -53,9 +53,9 @@ extension UIView{
         UIView.animate(withDuration: duration, animations: {
             self.alpha = 1
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 completion?()
-            }
+            //}
         })
     }
     
@@ -63,9 +63,9 @@ extension UIView{
         UIView.animate(withDuration: duration, animations: {
             self.alpha = 0
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 completion?()
-            }
+            //}
         })
     }
     
@@ -73,17 +73,17 @@ extension UIView{
         UIView.animate(withDuration: 0.2, animations: {
             self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
                     self.alpha = 0
                 }, completion: { (didComplete) in
-                    if didComplete {
+                    //if didComplete {
                         self.isHidden = true
                         completion?()
-                    }
+                    //}
                 })
-            }
+            //}
         })
     }
     
@@ -92,7 +92,7 @@ extension UIView{
             self.alpha = alphaIn
             self.transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
         }, completion: { (didComplete) in
-            if didComplete {
+            //if didComplete {
                 halfWay?()
                 
                 if autoAnimateUp{
@@ -100,7 +100,7 @@ extension UIView{
                         completed?()
                     })
                 }
-            }
+            //}
         })
     }
     
@@ -109,9 +109,9 @@ extension UIView{
                 self.alpha = 1
                 self.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: { (didComplete) in
-                if didComplete {
+                //if didComplete {
                     completed?()
-                }
+                //}
             })
     }
     
