@@ -121,4 +121,17 @@ extension UIView{
         })
     }
     
+    public func animateFadeOutDown(duration: Double = 0.3, _ completion:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration, animations: {
+            if let superview = self.superview {
+                self.center = CGPoint(x: self.center.x, y: superview.frame.size.height)
+            }
+            self.alpha = 0
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completion?()
+            //}
+        })
+    }
+    
 }
