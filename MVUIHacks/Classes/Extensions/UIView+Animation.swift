@@ -20,13 +20,13 @@ extension UIView{
             self.alpha = 1
         }, completion: { (didComplete) in
             //if didComplete {
-                UIView.animate(withDuration: duration*0.3, animations: {
-                    self.transform = CGAffineTransform(scaleX: 1, y: 1)
-                }, completion: { (didComplete) in
-                    //if didComplete {
-                        completion?()
-                    //}
-                })
+            UIView.animate(withDuration: duration*0.3, animations: {
+                self.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { (didComplete) in
+                //if didComplete {
+                completion?()
+                //}
+            })
             //}
         })
     }
@@ -42,19 +42,25 @@ extension UIView{
             self.alpha = 1
         }, completion: { (didComplete) in
             //if didComplete {
-                completion?()
+            completion?()
             //}
         })
     }
     
     public func animateFadeIn(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
+        if !self.isHidden {
+            return
+        }
+        
+        self.isHidden = false
         self.alpha = alphaIn
         
         UIView.animate(withDuration: duration, animations: {
             self.alpha = 1
         }, completion: { (didComplete) in
             //if didComplete {
-                completion?()
+            completion?()
+            completion?()
             //}
         })
     }
@@ -64,7 +70,7 @@ extension UIView{
             self.alpha = 0
         }, completion: { (didComplete) in
             //if didComplete {
-                completion?()
+            completion?()
             //}
         })
     }
@@ -74,15 +80,15 @@ extension UIView{
             self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }, completion: { (didComplete) in
             //if didComplete {
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                    self.alpha = 0
-                }, completion: { (didComplete) in
-                    //if didComplete {
-                        self.isHidden = true
-                        completion?()
-                    //}
-                })
+            UIView.animate(withDuration: 0.2, animations: {
+                self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                self.alpha = 0
+            }, completion: { (didComplete) in
+                //if didComplete {
+                self.isHidden = true
+                completion?()
+                //}
+            })
             //}
         })
     }
@@ -93,26 +99,39 @@ extension UIView{
             self.transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
         }, completion: { (didComplete) in
             //if didComplete {
-                halfWay?()
-                
-                if autoAnimateUp{
-                    self.animateTouchUp(duration: durationOut, {
-                        completed?()
-                    })
-                }
+            halfWay?()
+            
+            if autoAnimateUp{
+                self.animateTouchUp(duration: durationOut, {
+                    completed?()
+                })
+            }
             //}
         })
     }
     
     public func animateTouchUp(duration: Double = 0.2, _ completed:(() -> Void)? = nil){
-            UIView .animate(withDuration: duration, animations: {
-                self.alpha = 1
-                self.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }, completion: { (didComplete) in
-                //if didComplete {
-                    completed?()
-                //}
-            })
+        UIView .animate(withDuration: duration, animations: {
+            self.alpha = 1
+            self.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completed?()
+            //}
+        })
+    }
+    
+    public func animateFadeOutDown(duration: Double = 0.3, _ completion:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration, animations: {
+            if let superview = self.superview {
+                self.center = CGPoint(x: self.center.x, y: superview.frame.size.height)
+            }
+            self.alpha = 0
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completion?()
+            //}
+        })
     }
     
 }
