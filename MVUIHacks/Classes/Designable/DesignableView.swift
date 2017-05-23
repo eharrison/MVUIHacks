@@ -25,13 +25,21 @@ open class DesignableView: UIView {
         }
     }
     
+    @IBInspectable var autoRadius:Bool = false {
+        didSet {
+            if autoRadius {
+                cornerRadius = layer.frame.height / 2
+            }
+        }
+    }
+    
     open func updateShape(_ shapeType: Int){
         switch shapeType {
         case ShapeType.hexagon.rawValue:
             self.addHexagonalMask(0)
             break
         case ShapeType.hexagonVertical.rawValue:
-            self.addHexagonalMask(CGFloat(M_PI_2))
+            self.addHexagonalMask(CGFloat(Double.pi/2))
             break
         default:
             break
@@ -74,5 +82,8 @@ open class DesignableView: UIView {
     open override func layoutSubviews() {
         addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
         updateShape(shapeType)
+        if autoRadius {
+            cornerRadius = layer.frame.height / 2
+        }
     }
 }
