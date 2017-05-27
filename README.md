@@ -22,7 +22,7 @@ MVUIHacks is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MVUIHacks", git: 'https://github.com/iOSWizards/MVUIHacks', tag: '0.2.10'
+pod "MVUIHacks", git: 'https://github.com/iOSWizards/MVUIHacks', tag: '0.2.11'
 ```
 
 ## Author
