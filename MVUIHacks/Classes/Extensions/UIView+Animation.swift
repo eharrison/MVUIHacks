@@ -47,6 +47,22 @@ extension UIView{
         })
     }
     
+    public func animateFadeInLeftToRight(duration: Double = 0.35, alphaIn: CGFloat = 0, damping: CGFloat = 0.68, _ completion:(() -> Void)? = nil){
+        self.alpha = alphaIn
+        
+        let center = CGRect(x: self.superview!.frame.origin.x, y: self.superview!.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
+        self.frame = CGRect(x: self.superview!.frame.origin.x-self.frame.width, y: self.superview!.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
+        
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: 0, options: .curveLinear, animations: {
+            self.frame = center
+            self.alpha = 1
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completion?()
+            //}
+        })
+    }
+    
     public func animateFadeIn(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
         if !self.isHidden {
             return
@@ -125,6 +141,32 @@ extension UIView{
         UIView.animate(withDuration: duration, animations: {
             if let superview = self.superview {
                 self.center = CGPoint(x: self.center.x, y: superview.frame.size.height)
+            }
+            self.alpha = 0
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completion?()
+            //}
+        })
+    }
+    
+    public func animateFadeOutRightToLeft(duration: Double = 0.3, _ completion:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration, animations: {
+            if let superview = self.superview {
+                self.frame = CGRect(x: superview.frame.origin.x-self.frame.width, y: superview.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
+            }
+            self.alpha = 0
+        }, completion: { (didComplete) in
+            //if didComplete {
+            completion?()
+            //}
+        })
+    }
+    
+    public func animateFadeOutLeftToRight(duration: Double = 0.3, _ completion:(() -> Void)? = nil){
+        UIView.animate(withDuration: duration, animations: {
+            if let superview = self.superview {
+                self.frame = CGRect(x: superview.frame.size.width+self.frame.width, y: superview.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
             }
             self.alpha = 0
         }, completion: { (didComplete) in
