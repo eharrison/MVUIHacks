@@ -31,6 +31,22 @@ extension UIView{
         })
     }
     
+    public func animateValueChange(duration: Double = 0.3, scaleIn: CGFloat = 1.1, alphaIn: CGFloat = 0.9, _ completion:(() -> Void)? = nil){
+        isHidden = false
+        
+        UIView.animate(withDuration: duration*0.7, animations: {
+            self.transform = CGAffineTransform(scaleX: scaleIn, y: scaleIn)
+            self.alpha = alphaIn
+        }, completion: { (didComplete) in
+            UIView.animate(withDuration: duration*0.3, animations: {
+                self.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.alpha = 1
+            }, completion: { (didComplete) in
+                completion?()
+            })
+        })
+    }
+    
     public func animateFadeInUp(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
         self.alpha = alphaIn
         
